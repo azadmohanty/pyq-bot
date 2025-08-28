@@ -1,0 +1,56 @@
+Branch,Subject_Code,Subject_Name
+AE,HSBS2001,Mathematics - III
+AE,MFPC2001,Manufacturing Technology-I
+AE,MFPC2002,Introduction to Physical Metallurgy and Engineering Materials
+AE,MEPC2001,Mechanics of Solids
+AE,HSHS2001,Engineering Economics
+AE,HSHS2002,Organizational Behaviour
+Branch,Subject_Code,Subject_Name
+MME,HSBS2001,Mathematics - III
+MME,MTPC2001,Metallurgical Thermodynamics and Kinetics
+MME,MTPC2002,Science & Engineering of Materials
+MME,MTPC2003,Elements of Process Metallurgy
+MME,HSHS2002,Organizational Behaviour
+MME,HSHS2001,Engineering Economics
+Branch,Subject_Code,Subject_Name
+CSE,HSBS2001,Mathematics - III
+CSE,EOPC2004,Digital Electronics
+CSE,CSPC2002,Data Structures
+CSE,CSPC2003,Object Oriented Programming
+CSE,HSHS2002,Organizational Behaviour
+CSE,HSHS2001,Engineering Economics
+Branch,Subject_Code,Subject_Name
+ETC,HSBS2001,Mathematics - III
+ETC,EOPC2001,Analog Electronic Circuits
+ETC,EEPC2001,Electrical Circuit Analysis
+ETC,EOPC2003,Signals and Systems
+ETC,HSHS2002,Organizational Behaviour
+ETC,HSHS2001,Engineering Economics
+Branch,Subject_Code,Subject_Name
+ME,HSBS2001,Mathematics - III
+ME,MEPC2001,Mechanics of Solids
+ME,MEPC2002,Engineering Thermodynamics
+ME,MFPC2002,Introduction to Physical Metallurgy and Engineering Materials
+ME,HSHS2002,Organizational Behaviour
+ME,HSHS2001,Engineering Economics
+Branch,Subject_Code,Subject_Name
+EE,HSBS2001,Mathematics - III
+EE,EEPC2001,Electrical Circuit Analysis
+EE,EEPC2002,Electrical Machines - I
+EE,EOPC2002,Analog and Digital Electronic Circuits
+EE,HSHS2002,Organizational Behaviour
+EE,HSHS2001,Engineering Economics
+Branch,Subject_Code,Subject_Name
+CE,HSBS2001,Mathematics - III
+CE,MEPC2001,Mechanics of Solids
+CE,CIPC2002,Engineering Survey
+CE,CIPC2003,Fluid Mechanics
+CE,HSHS2002,Organizational Behaviour
+CE,HSHS2001,Engineering Economics
+Branch,Subject_Code,Subject_Name
+CHE,HSBS2001,Mathematics - III
+CHE,CEPC2001,Fuel and Energy Technology
+CHE,CEPC2002,Chemical Process Calculation
+CHE,CEPC2003,Mechanical Operation
+CHE,HSHS2002,Organizational Behaviour
+CHE,HSHS2001,Engineering Economics

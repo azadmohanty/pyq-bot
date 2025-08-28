@@ -37,7 +37,7 @@ A Telegram bot that helps students find previous year question papers for their 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/telegram-pyq-bot.git
+git clone https://github.com/azadmohanty/pyq-bot.git
 cd telegram-pyq-bot
 ```
 
@@ -53,78 +53,31 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# Edit .env with your credentials
+# Edit .env with your actual values
 ```
 
-4. Add your Firebase and Google API credentials
-
-- Place `firebase-credentials.json` in the project root
-- Place `client_secret.json` in the project root
-
-5. Run the bot
+4. Run the bot
 
 ```bash
 python bot.py
 ```
 
-### Deployment to Vercel
+### Vercel Deployment
 
-1. Create a Vercel account and install the Vercel CLI
+1. Fork or clone this repository
 
-```bash
-npm install -g vercel
-```
+2. Create a new project on Vercel and connect your GitHub repository
 
-2. Configure Vercel environment variables
+3. Set up the following environment variables in Vercel:
+   - `TELEGRAM_BOT_TOKEN`: Your Telegram bot token
+   - `SHEETS_SPREADSHEET_ID`: Your Google Sheets ID
+   - All Firebase and Google API credentials as specified in `.env.example`
 
-Add the following environment variables in the Vercel dashboard:
+4. Deploy the project
 
-- `TELEGRAM_BOT_TOKEN`
-- `SHEETS_SPREADSHEET_ID`
-- `SHEETS_RANGE`
-- Firebase credentials (all `FIREBASE_*` variables)
-- Google API credentials (all `GOOGLE_*` variables)
+5. Set up a webhook for your Telegram bot:
+   ```
+   https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=<YOUR_VERCEL_URL>/api/webhook
+   ```
 
-3. Deploy to Vercel
-
-```bash
-vercel
-```
-
-## Environment Variables
-
-### Required Variables
-
-- `TELEGRAM_BOT_TOKEN`: Your Telegram bot token from BotFather
-- `SHEETS_SPREADSHEET_ID`: ID of your Google Sheet with subject data
-- `SHEETS_RANGE`: Range in the sheet containing data (e.g., "Sheet1!A2:C")
-
-### Firebase Variables (for production)
-
-- `FIREBASE_TYPE`: Usually "service_account"
-- `FIREBASE_PROJECT_ID`: Your Firebase project ID
-- `FIREBASE_PRIVATE_KEY_ID`: Private key ID from Firebase credentials
-- `FIREBASE_PRIVATE_KEY`: Private key from Firebase credentials
-- `FIREBASE_CLIENT_EMAIL`: Client email from Firebase credentials
-- `FIREBASE_CLIENT_ID`: Client ID from Firebase credentials
-- `FIREBASE_AUTH_URI`: Auth URI (usually "https://accounts.google.com/o/oauth2/auth")
-- `FIREBASE_TOKEN_URI`: Token URI (usually "https://oauth2.googleapis.com/token")
-- `FIREBASE_AUTH_PROVIDER_X509_CERT_URL`: Auth provider cert URL
-- `FIREBASE_CLIENT_X509_CERT_URL`: Client cert URL
-
-### Google API Variables (for production)
-
-- `GOOGLE_CLIENT_TYPE`: Usually "service_account"
-- `GOOGLE_PROJECT_ID`: Your Google project ID
-- `GOOGLE_PRIVATE_KEY_ID`: Private key ID from Google credentials
-- `GOOGLE_PRIVATE_KEY`: Private key from Google credentials
-- `GOOGLE_CLIENT_EMAIL`: Client email from Google credentials
-- `GOOGLE_CLIENT_ID`: Client ID from Google credentials
-- `GOOGLE_AUTH_URI`: Auth URI (usually "https://accounts.google.com/o/oauth2/auth")
-- `GOOGLE_TOKEN_URI`: Token URI (usually "https://oauth2.googleapis.com/token")
-- `GOOGLE_AUTH_PROVIDER_X509_CERT_URL`: Auth provider cert URL
-- `GOOGLE_CLIENT_X509_CERT_URL`: Client cert URL
-
-## License
-
-MIT
+6. Your bot should now be running on Vercel!
